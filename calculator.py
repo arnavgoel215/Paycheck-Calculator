@@ -10,7 +10,7 @@ def calculate_salary(yearly_salary: float) -> float:
 def calculator_server():
     context = zmq.Context()
     socket = context.socket(zmq.REP)
-    socket.bind("tcp://*5555")
+    socket.bind("tcp://*:5555")
 
     print("Server is running on port 5555....")
 
