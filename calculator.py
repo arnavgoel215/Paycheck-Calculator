@@ -35,3 +35,7 @@ def calculator_server():
                 socket.send_string("Error: Received invalid value")
         else:
             socket.send_string("Error: Invalid command")
+
+
+if __name__ == "__main__":
+    calculator_server()
